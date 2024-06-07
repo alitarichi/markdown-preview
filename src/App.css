@@ -19,7 +19,7 @@ body {
 
 .title {
   color: orange;
-  background-color: black;
+  background-color: #444;
   width: 100%;
   text-align: left;
   padding: 20px;
@@ -28,7 +28,7 @@ body {
 
 .content {
   display: flex;
-  width: 80%;
+  width: 90%;
   flex: 1;
   justify-content: space-between;
   align-items: stretch;
@@ -39,7 +39,7 @@ body {
 
 .markdown,
 .textarea {
-  flex: 0 0 40%;
+  flex: 0 0 48%;
   padding: 20px;
   background-color: black;
   border-radius: 10px;
@@ -87,4 +87,20 @@ body {
   padding: 20px;
   box-sizing: border-box;
   margin-top: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  color: orange;
+  background-color: #444;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 50px; /* Adjust based on your preference */
+  width: 50px;
+  margin-right: 20px; /* Space between logo and title */
 }

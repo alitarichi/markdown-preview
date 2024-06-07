@@ -9,7 +9,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="title">Markdown Previewer</h1>
+      <header className="header">
+        <img src="/logo.svg" alt="Logo" className="logo" />
+        <h1 className="title">Markdown Previewer</h1>
+      </header>
       <div className="content">
         <textarea
           autoFocus
