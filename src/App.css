@@ -1,3 +1,4 @@
+/* General body styling */
 body {
   background-color: #444;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   min-height: 100vh;
 }
 
+/* Main App container */
 .App {
   display: flex;
   flex-direction: column;
@@ -17,6 +19,7 @@ body {
   align-items: center;
 }
 
+/* Title styling */
 .title {
   color: orange;
   background-color: #444;
@@ -26,6 +29,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Content container */
 .content {
   display: flex;
   width: 90%;
@@ -34,9 +38,10 @@ body {
   align-items: stretch;
   padding-bottom: 20px;
   box-sizing: border-box;
-  overflow: hidden; /* Hide overflow for content container */
+  overflow: hidden;
 }
 
+/* Shared styling for markdown and textarea */
 .markdown,
 .textarea {
   flex: 0 0 48%;
@@ -47,20 +52,23 @@ body {
   font-size: 16px;
   line-height: 1.5;
   box-sizing: border-box;
-  overflow-y: auto; /* Ensure vertical scrolling */
+  overflow-y: auto;
 }
 
+/* Specific styling for markdown */
 .markdown {
   white-space: pre-wrap;
   overflow-x: hidden;
 }
 
+/* Specific styling for textarea */
 .textarea {
   border: none;
   outline: none;
   resize: vertical;
 }
 
+/* Scrollbar styling */
 .textarea::-webkit-scrollbar,
 .markdown::-webkit-scrollbar {
   width: 8px;
@@ -79,16 +87,7 @@ body {
   cursor: pointer;
 }
 
-.footer {
-  color: orange;
-  background-color: black;
-  width: 100%;
-  text-align: right;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-top: auto;
-}
-
+/* Header styling */
 .header {
   display: flex;
   align-items: center;
@@ -103,4 +102,48 @@ body {
   height: 50px; /* Adjust based on your preference */
   width: 50px;
   margin-right: 20px; /* Space between logo and title */
+}
+
+/* Footer styling */
+.footer {
+  color: orange;
+  background-color: #444;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  width: 50%; /* Adjust the width as needed */
+  gap: 25px;
+  padding: 0 70px;
+}
+
+.footer-image {
+  width: 40px;
+  height: 40px; /* Adjust the size as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .markdown,
+  .textarea {
+    flex: 0 0 100%;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
 }

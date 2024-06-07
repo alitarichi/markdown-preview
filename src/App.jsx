@@ -27,7 +27,21 @@ function App() {
           components={{ code: Component }}
         />
       </div>
-      <footer className="footer">Footer Content</footer>
+      <footer className="footer">
+        <div className="footer-content">
+          <p>Created by Ali Tarichi</p>
+          <a href="https://alitarichi.netlify.app/">
+            <img src="/website.svg" alt="website" className="footer-image" />
+          </a>
+          <a href="https://www.freecodecamp.org/">
+            <img
+              src="/freecodecamp.svg"
+              alt="freecodecamp"
+              className="footer-image"
+            />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
