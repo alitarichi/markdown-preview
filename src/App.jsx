@@ -9,18 +9,22 @@ function App() {
 
   return (
     <div className="App">
-      <textarea
-        autoFocus
-        id="textarea"
-        className="textarea"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <ReactMarkdown
-        children={input}
-        className="markdown"
-        components={{ code: Component }}
-      />
+      <h1 className="title">Markdown Previewer</h1>
+      <div className="content">
+        <textarea
+          autoFocus
+          id="textarea"
+          className="textarea"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <ReactMarkdown
+          children={input}
+          className="markdown"
+          components={{ code: Component }}
+        />
+      </div>
+      <footer className="footer">Footer Content</footer>
     </div>
   );
 }
