@@ -33,12 +33,11 @@ function App() {
           <a href="https://alitarichi.netlify.app/">
             <img src="/website.svg" alt="website" className="footer-image" />
           </a>
+          <a href="https://github.com/alitarichi">
+            <img src="/github.svg" alt="github" className="footer-image" />
+          </a>
           <a href="https://www.freecodecamp.org/">
-            <img
-              src="/freecodecamp.svg"
-              alt="freecodecamp"
-              className="footer-image"
-            />
+            <img src="/fcc.svg" alt="freecodecamp" className="footer-image" />
           </a>
         </div>
       </footer>
