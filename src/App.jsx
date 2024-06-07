@@ -8,22 +8,20 @@ function App() {
   const [input, setInput] = useState("");
 
   return (
-    <>
-      <div className="App">
-        <textarea
-          autoFocus
-          id="textarea"
-          className="textarea"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
-        <ReactMarkdown
-          children={input}
-          className="markdown"
-          components={{ code: Component }}
-        />
-      </div>
-    </>
+    <div className="App">
+      <textarea
+        autoFocus
+        id="textarea"
+        className="textarea"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+      />
+      <ReactMarkdown
+        children={input}
+        className="markdown"
+        components={{ code: Component }}
+      />
+    </div>
   );
 }
 
@@ -43,4 +41,5 @@ const Component = ({ node, inline, className, children, ...props }) => {
     </code>
   );
 };
+
 export default App;
